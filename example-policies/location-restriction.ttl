@@ -4,7 +4,7 @@
 <http://example.com/policy:location_restriction>
     a odrl:Policy ;
     odrl:permission [
-    odrl:action odrl:read ;
+    odrl:action odrl:use ;
     odrl:assignee <http://example.com/people/bob> ;
     odrl:assigner <http://example.com/people/alice> ;
     odrl:constraint [
