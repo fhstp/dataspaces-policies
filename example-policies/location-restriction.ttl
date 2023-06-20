@@ -1,1 +1,17 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://example.com/policy:location_restriction>
+    a odrl:Policy ;
+    odrl:permission [
+    odrl:action odrl:read ;
+    odrl:assignee <http://example.com/people/bob> ;
+    odrl:assigner <http://example.com/people/alice> ;
+    odrl:constraint [
+        odrl:leftOperand odrl:spatial ;
+        odrl:operator odrl:eq ;
+        odrl:rightOperand "AT"^^xsd:string
+    ] ;
+    odrl:target <http://example.com/asset:1234>
+    ] ;
+    odrl:profile <http://example.com/odrl:profile:10> .
