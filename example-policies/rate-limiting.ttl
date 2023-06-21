@@ -10,16 +10,18 @@
 <http://example.com/policies#permission1>
   a odrl:Permission ;
   odrl:target <http://example.com/files/file1> ;
-  odrl:action odrl:read ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee <https://www.example.com/consumer> ;
+  odrl:action <http://example.com/policies#action1> ;
   odrl:constraint <http://example.com/policies#constraint1> .
 
 <http://example.com/policies#action1>
   a odrl:Action ;
   rdf:value odrl:read ;
   odrl:refinement [
-    odrl:leftOperand odrl:count ;
-    odrl:operator odrl:lteq ;
-    odrl:rightOperand 10
+    odrl:leftOperand odrl:unitOfCount ;
+    odrl:operator odrl:eq ;
+    odrl:rightOperand "3is1"
   ] .
 
 <http://example.com/policies#constraint1>
