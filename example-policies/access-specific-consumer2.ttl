@@ -1,0 +1,25 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile odrl:core ;
+  odrl:permission <http://example.com/policies#permission1> .
+
+<http://example.com/policies#permission1>
+  a odrl:Permission ;
+  odrl:target <http://example.com/files/file1> ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee <https://www.example.com/consumer> ;
+  odrl:action odrl:read ;
+  odrl:constraint <http://example.com/policies#constraint1> .
+
+<http://example.com/policies#constraint1>
+  a odrl:Constraint ;
+  odrl:leftOperand odrl:recipient ;
+  odrl:operator odrl:eq ;
+  odrl:rightOperand <https://www.example.com/consumer> .
+
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
