@@ -1,0 +1,35 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile odrl:core ;
+  odrl:permission <http://example.com/policies#permission1> .
+
+<http://example.com/policies#permission1>
+  a odrl:Permission ;
+  odrl:target <http://example.com/files/file1> ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee <https://www.example.com/consumer> ;
+  odrl:action <http://example.com/policies#action1> ;
+  odrl:constraint <http://example.com/policies#constraint1> .
+
+<http://example.com/policies#action1>
+  a odrl:Action ;
+  rdf:value odrl:read ;
+  odrl:refinement [
+    odrl:leftOperand odrl:unitOfCount ;
+    odrl:operator odrl:eq ;
+    odrl:rightOperand "MiB"
+  ] .
+
+<http://example.com/policies#constraint1>
+  a odrl:Constraint ;
+  odrl:leftOperand odrl:count ;
+  odrl:operator odrl:lteq ;
+  odrl:rightOperand "1024" .
+
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
