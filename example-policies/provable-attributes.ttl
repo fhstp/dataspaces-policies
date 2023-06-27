@@ -1,0 +1,28 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile ds:v1 ;
+  odrl:permission <http://example.com/policies#permission1> .
+
+<http://example.com/policies#permission1>
+  a odrl:Permission ;
+  odrl:target <http://example.com/files/file1> ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee [
+      a odrl:PartyCollection ;
+      odrl:refinement [
+        odrl:leftOperand ds:membership ;
+        odrl:operator odrl:eq ;
+        odrl:rightOperand "Mobility Dataspace"
+      ]
+    ] ;
+  odrl:action odrl:read .
+  
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
+
