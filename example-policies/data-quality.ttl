@@ -1,0 +1,32 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile ds:v1 ;
+  odrl:permission <http://example.com/policies#permission1> .
+
+<http://example.com/policies#permission1>
+  a odrl:Permission ;
+  odrl:target <http://example.com/files/file1> ;
+  odrl:assigner <https://www.example.com/consumer> ;
+  odrl:assignee <https://www.example.com/provider> ;
+  odrl:action odrl:distribute ;
+  odrl:obligation <http://example.com/policies#obligation1> .
+
+
+<http://example.com/policies#obligation1>
+  a odrl:Obligation ;
+  odrl:action ds:qualityControl ;
+  odrl:constraint <http://example.com/policies#constraint1> .
+
+<http://example.com/policies#constraint1>
+  a odrl:Constraint ;
+  odrl:leftOperand ds:completeness ;
+  odrl:operator odrl:gteq ;
+  odrl:rightOperand 50 .
+  
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
