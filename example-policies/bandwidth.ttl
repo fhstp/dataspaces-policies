@@ -1,0 +1,41 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile ds:v1 ;
+  odrl:permission <http://example.com/policies#permission1> .
+
+<http://example.com/policies#permission1>
+  a odrl:Permission ;
+  odrl:target <http://example.com/files/file1> ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee <https://www.example.com/consumer> ;
+  odrl:action odrl:read ;
+  odrl:obligation <http://example.com/policies#obligation1> .
+
+
+<http://example.com/policies#obligation1>
+  a odrl:Obligation ;
+  odrl:action <http://example.com/policies#bandwith> ;
+  odrl:constraint <http://example.com/policies#constraint1> .
+
+<http://example.com/policies#bandwith>
+  a odrl:Action ;
+  rdf:value ds:bandwithUsage ;
+  odrl:refinement [
+    odrl:leftOperand odrl:unitOfCount ;
+    odrl:operator odrl:eq ;
+    odrl:rightOperand "MBit/s"
+  ] .
+
+<http://example.com/policies#constraint1>
+  a odrl:Constraint ;
+  odrl:leftOperand ds:bandwidth ;
+  odrl:operator odrl:lteq ;
+  odrl:rightOperand 20 .
+  
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
