@@ -20,7 +20,7 @@
   odrl:constraint <http://example.com/policies#constraint1> .
 
 <http://example.com/policies#constraint1>
-  a odrl:Connections ;
+  a odrl:Constraint ;
   odrl:leftOperand odrl:payAmount ;
   odrl:operator odrl:eq ;
   odrl:rightOperand 500.0 .
