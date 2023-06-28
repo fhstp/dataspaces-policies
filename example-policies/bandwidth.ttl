@@ -1,6 +1,7 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <http://example.com/policies#policy>
   a odrl:Policy ;
