@@ -15,7 +15,6 @@
   odrl:action odrl:distribute ;
   odrl:obligation <http://example.com/policies#obligation1> .
 
-
 <http://example.com/policies#obligation1>
   a odrl:Obligation ;
   odrl:action ds:qualityControl ;
@@ -23,9 +22,9 @@
 
 <http://example.com/policies#constraint1>
   a odrl:Constraint ;
-  odrl:leftOperand ds:completeness ;
-  odrl:operator odrl:gteq ;
-  odrl:rightOperand 50 .
+  odrl:leftOperand dcat:conformsTo ;
+  odrl:operator odrl:eq ;
+  odrl:rightOperand <http://example.com/shacl-shape> .
   
 <http://example.com/files/file1>
   a odrl:Asset ;
