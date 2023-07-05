@@ -1,0 +1,25 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+
+<http://example.com/policies#policy>
+  a odrl:Policy ;
+  odrl:profile odrl:core ;
+  odrl:obligation [
+    a odrl:Obligation ;
+    odrl:target <http://example.com/files/file1> ;
+    odrl:assigner <https://www.example.com/consumer> ;
+    odrl:assignee <https://www.example.com/provider> ;
+    odrl:action ds:update ;
+    odrl:constraint <http://example.com/policies#constraint1> 
+  ] .
+
+<http://example.com/policies#constraint1>
+  a odrl:Constraint ;
+  odrl:leftOperand odrl:timeInterval ;
+  odrl:operator odrl:eq ;
+  odrl:rightOperand "P30S" .
+
+<http://example.com/files/file1>
+  a odrl:Asset ;
+  dc11:title "File 1" .
