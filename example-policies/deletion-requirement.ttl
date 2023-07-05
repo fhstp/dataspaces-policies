@@ -4,16 +4,16 @@
 <http://example.com/policy001>
   a odrl:Policy ;
   odrl:profile <http://www.w3.org/ns/odrl.jsonld> ;
-  odrl:assigner <https://www.example.com/assigner> ;
-  odrl:assignee <https://www.example.com/assignee> ;
+  odrl:assigner <https://www.example.com/provider> ;
+  odrl:assignee <https://www.example.com/consumer> ;
   odrl:obligation [
     a odrl:Obligation ;
-    odrl:target <https://www.example.com/data1.txt> ;
+    odrl:target <https://www.example.com/data1.csv> ;
     odrl:action odrl:delete ;
     odrl:constraint [
       a odrl:Constraint ;
       odrl:leftOperand odrl:dateTime ;
       odrl:operator odrl:lt ;
-      odrl:rightOperand "2023-06-23T00:00:00Z"^^xsd:dateTime
+      odrl:rightOperand "2023-07-10T00:00:00Z"^^xsd:dateTime
     ]
   ] .
