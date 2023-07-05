@@ -1,5 +1,6 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
 
 <http://example.com/policies#policy>
