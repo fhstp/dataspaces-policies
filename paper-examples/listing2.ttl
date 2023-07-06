@@ -24,10 +24,10 @@
       odrl:leftOperand odrl:dateTime ;
       odrl:operator odrl:lt ;
       odrl:rightOperand "2023-07-10T00:00:00Z"^^xsd:dateTime
-    ], [
-      a odrl:Obligation ;
-      odrl:action odrl:anonymize
     ]
+  ], [
+    a odrl:Obligation ;
+    odrl:action odrl:anonymize
   ] .
 
 <http://example.com/policies#action1>
