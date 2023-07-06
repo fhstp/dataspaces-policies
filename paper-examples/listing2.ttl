@@ -27,6 +27,7 @@
     ]
   ], [
     a odrl:Obligation ;
+    odrl:target <http://example.com/files/file1> ;
     odrl:action odrl:anonymize
   ] .
 
