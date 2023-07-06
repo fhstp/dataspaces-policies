@@ -1,6 +1,7 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
 
 <http://example.com/policies#policy>
@@ -13,7 +14,20 @@
     odrl:assignee <https://www.example.com/provider> ;
     odrl:action ds:update ;
     odrl:constraint <http://example.com/policies#constraint1> ;
-    odrl:constraint <http://example.com/policies#constraint2>
+  ], [
+    odrl:action [
+      rdf:value ds:qualityControl ;
+      odrl:refinement [
+        odrl:leftOperand ds:conformsTo ;
+        odrl:operator odrl:eq ;
+        odrl:rightOperand <http://example.com/shacl-shape>
+      ]
+    ] ;
+    odrl:constraint [
+      odrl:leftOperand odrl:event ;
+      odrl:operator odrl:lt ;
+      odrl:rightOperand odrl:policyUsage
+    ]
   ] .
 
 <http://example.com/policies#constraint1>
@@ -21,13 +35,7 @@
   odrl:leftOperand odrl:timeInterval ;
   odrl:operator odrl:eq ;
   odrl:rightOperand "P30S" .
-
-<http://example.com/policies#constraint2>
-  a odrl:Constraint ;
-  odrl:leftOperand dcat:conformsTo ;
-  odrl:operator odrl:eq ;
-  odrl:rightOperand <http://example.com/shacl-shape> .
-
+  
 <http://example.com/files/file1>
   a odrl:Asset ;
   dc11:title "File 1" .
