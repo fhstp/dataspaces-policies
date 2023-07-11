@@ -1,0 +1,295 @@
+## Definition of used or common namespaces
+@base <http://www.w3.org/ns/odrl/2/> .
+@prefix : <http://www.w3.org/ns/odrl/2/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dataspaces: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
+@prefix ds: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> .
+
+## Definition of the Profile as OWL Ontology
+ds:
+    a owl:Ontology ;
+    rdfs:label "Data Spaces Profile Version 1"@en ;
+    owl:versionInfo "1.0" ;
+    dct:creator "Sebastian Neumaier", "Tobias Dam" ;
+    dct:contributor "Andreas Krimbacher" ;
+    dct:description "The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en ;
+    rdfs:comment "This is the RDF ontology for Data Spaces Profile 1"@en ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .
+
+## Concept(s) specified by this Profile. 
+
+dataspaces:conformsTo
+    a :LeftOperand, owl:NamedIndividual ;
+    rdfs:isDefinedBy dataspaces: ;
+    rdfs:label "Conforms to Schema"@en ;
+    skos:definition "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "@en .
+
+dataspaces:bandwithUsage
+    a :Action, skos:Concept ;
+    rdfs:isDefinedBy dataspaces: ;
+    rdfs:label "Use bandwith"@en ;
+    :includedIn odrl:use ;
+    skos:definition "Use bandwith when accessing a resource. "@en .
+
+dataspaces:bandwith
+    a :LeftOperand, owl:NamedIndividual ;
+    rdfs:isDefinedBy dataspaces: ;
+    rdfs:label "Bandwith for accessing resources"@en ;
+    skos:definition "Specifies the bandwith allowed for accessing the resource. "@en .
+
+dataspaces:qualityControl
+    a :Action, skos:Concept ;
+    rdfs:isDefinedBy dataspaces: ;
+    rdfs:label "Perform quality control"@en ;
+    :includedIn odrl:use ;
+    skos:definition "Perform quality control on the resource provided. "@en .
+
+dataspaces:membership
+    a :LeftOperand, owl:NamedIndividual ;
+        rdfs:isDefinedBy dataspaces: ;
+        rdfs:label "Proofs Membership"@en ;
+        skos:definition "Defines the membership someone must have to acess a resource. "@en .
+
+dataspaces:update 
+    a :Action, skos:Concept ;
+    rdfs:isDefinedBy dataspaces: ;
+    rdfs:label "Update Data"@en ;
+    :includedIn odrl:use ;
+    skos:definition "Update the resource provided. "@en .
+
+## SKOS Collection of all concepts defined by this Profile
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl>
+    a skos:Collection ;
+    skos:prefLabel "Data Spaces Profile Vocabulary"@en ;
+    skos:scopeNote "All terms of the Data Spaces Vocabulary"@en ;
+ ## all members below are from the ODRL Common Vocabulary, a specification exists
+    skos:member :acceptTracking ;
+    skos:member :aggregate ;
+    skos:member :annotate ;
+    skos:member :anonymize ;
+    skos:member :archive ;
+    skos:member :attribute ;
+    skos:member :compensate ;
+    skos:member :concurrentUse ;
+    skos:member :delete ;
+    skos:member :derive ;
+    skos:member :digitize ;
+    skos:member :display ;
+    skos:member :distribute ;
+    skos:member :ensureExclusivity ;
+    skos:member :execute ;
+    skos:member :extract ;
+    skos:member :give ;
+    skos:member :grantUse ;
+    skos:member :include ;
+    skos:member :index ;
+    skos:member :inform ;
+    skos:member :modify ;
+    skos:member :move ;
+    skos:member :nextPolicy ;
+    skos:member :obtainConsent ;
+    skos:member :play ;
+    skos:member :present ;
+    skos:member :print ;
+    skos:member :reproduce ;
+    skos:member :reviewPolicy ;
+    skos:member :sell ;
+    skos:member :stream ;
+    skos:member :synchronize ;
+    skos:member :textToSpeech ;
+    skos:member :transform ;
+    skos:member :translate ;
+    skos:member :watermark ;
+    skos:member :absolutePosition ;
+    skos:member :absoluteSpatialPosition ;
+    skos:member :absoluteTemporalPosition ;
+    skos:member :absoluteSize ;
+    skos:member :count ;
+    skos:member :dateTime ;
+    skos:member :delayPeriod ;
+    skos:member :deliveryChannel ;
+    skos:member :elapsedTime ;
+    skos:member :event ;
+    skos:member :fileFormat ;
+    skos:member :industry ;
+    skos:member :language ;
+    skos:member :media ;
+    skos:member :meteredTime ;
+    skos:member :payAmount ;
+    skos:member :percentage ;
+    skos:member :product ;
+    skos:member :purpose ;
+    skos:member :recipient ;
+    skos:member :relativePosition ;
+    skos:member :relativeSpatialPosition ;
+    skos:member :relativeTemporalPosition ;
+    skos:member :relativeSize ;
+    skos:member :resolution ;
+    skos:member :spatial ;
+    skos:member :spatialCoordinates ;
+    skos:member :systemDevice ;
+    skos:member :timeInterval ;
+    skos:member :unitOfCount ;
+    skos:member :version ;
+    skos:member :virtualLocation;
+    skos:member :policyUsage ;
+    skos:member :attributedParty ;
+    skos:member :compensatedParty ;
+    skos:member :compensatingParty ;
+    skos:member :consentingParty ;
+    skos:member :consentedParty ;
+    skos:member :informedParty ;
+    skos:member :informingParty ;
+    skos:member :trackingParty ;
+    skos:member :trackedParty ;
+    skos:member :output ;
+## the member below is a concept created for this Profile
+##   it needs to be specified in this ontology
+    skos:member dataspaces:bandwithUsage;
+    skos:member dataspaces:bandwith;
+    skos:member dataspaces:qualityControl;
+    skos:member dataspaces:conformsTo;
+    skos:member dataspaces:membership;
+    skos:member dataspaces:update .
+
+
+## SKOS Collection of all Action concepts defined by this Profile
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions>
+    a skos:Collection ;
+    skos:prefLabel "Actions for Rules"@en ;
+    skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
+    skos:member dataspaces:bandwithUsage;
+    skos:member dataspaces:qualityControl;
+    skos:member dataspaces:update;
+
+    skos:member :acceptTracking ;
+    skos:member :aggregate ;
+    skos:member :annotate ;
+    skos:member :anonymize ;
+    skos:member :archive ;
+    skos:member :attribute ;
+    skos:member :compensate ;
+    skos:member :concurrentUse ;
+    skos:member :delete ;
+    skos:member :derive ;
+    skos:member :digitize ;
+    skos:member :display ;
+    skos:member :distribute ;
+    skos:member :ensureExclusivity ;
+    skos:member :execute ;
+    skos:member :extract ;
+    skos:member :give ;
+    skos:member :grantUse ;
+    skos:member :include ;
+    skos:member :index ;
+    skos:member :inform ;
+    skos:member :modify ;
+    skos:member :move ;
+    skos:member :nextPolicy ;
+    skos:member :obtainConsent ;
+    skos:member :play ;
+    skos:member :present ;
+    skos:member :print ;
+    skos:member :reproduce ;
+    skos:member :reviewPolicy ;
+    skos:member :sell ;
+    skos:member :stream ;
+    skos:member :synchronize ;
+    skos:member :textToSpeech ;
+    skos:member :transform ;
+    skos:member :translate ;
+    skos:member :watermark .
+
+## SKOS Collection of all Left Operand concepts defined by this Profile
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand>
+    a skos:Collection ;
+    skos:prefLabel "Constraint Left Operands"@en ;
+    skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
+    skos:member dataspaces:bandwithUsage;
+    skos:member dataspaces:qualityControl;
+    skos:member dataspaces:membership;
+
+    skos:member :absolutePosition ;
+    skos:member :absoluteSpatialPosition ;
+    skos:member :absoluteTemporalPosition ;
+    skos:member :absoluteSize ;
+    skos:member :count ;
+    skos:member :dateTime ;
+    skos:member :delayPeriod ;
+    skos:member :deliveryChannel ;
+    skos:member :elapsedTime ;
+    skos:member :event ;
+    skos:member :fileFormat ;
+    skos:member :industry ;
+    skos:member :language ;
+    skos:member :media ;
+    skos:member :meteredTime ;
+    skos:member :payAmount ;
+    skos:member :percentage ;
+    skos:member :product ;
+    skos:member :purpose ;
+    skos:member :recipient ;
+    skos:member :relativePosition ;
+    skos:member :relativeSpatialPosition ;
+    skos:member :relativeTemporalPosition ;
+    skos:member :relativeSize ;
+    skos:member :resolution ;
+    skos:member :spatial ;
+    skos:member :spatialCoordinates ;
+    skos:member :systemDevice ;
+    skos:member :timeInterval ;
+    skos:member :unitOfCount ;
+    skos:member :version ;
+    skos:member :virtualLocation .
+
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp>
+    a skos:Collection ;
+    skos:prefLabel "Constraint Right Operands"@en ;
+    skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
+    skos:member :policyUsage .
+
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles>
+    a skos:Collection ;
+    skos:prefLabel "Party Functions"@en ;
+    skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
+    skos:member :attributedParty ;
+    skos:member :compensatedParty ;
+    skos:member :compensatingParty ;
+    skos:member :consentingParty ;
+    skos:member :consentedParty ;
+    skos:member :informedParty ;
+    skos:member :informingParty ;
+    skos:member :trackingParty ;
+    skos:member :trackedParty .
+
+<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations>
+    a skos:Collection ;
+    skos:prefLabel "Asset Relations"@en ;
+    skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
+    skos:member :output .
+
+## Declaration of annotation properties to keep this ontology within OWL DL
+	skos:member rdf:type owl:AnnotationProperty .
+	skos:note rdf:type owl:AnnotationProperty .
+	skos:scopeNote rdf:type owl:AnnotationProperty .
+	skos:prefLabel rdf:type owl:AnnotationProperty .
+	skos:definition rdf:type owl:AnnotationProperty .
+	dct:contributor rdf:type owl:AnnotationProperty .
+	dct:license rdf:type owl:AnnotationProperty .
+	dct:issued rdf:type owl:AnnotationProperty .
+	dct:subject rdf:type owl:AnnotationProperty .
+	dct:creator rdf:type owl:AnnotationProperty .
+	dct:description rdf:type owl:AnnotationProperty .
+	dct:isVersionOf rdf:type owl:AnnotationProperty .
+	dct:format rdf:type owl:AnnotationProperty .
+	skos:Collection a owl:Class .
+	skos:Concept a owl:Class .
+	skos:ConceptScheme a owl:Class .
