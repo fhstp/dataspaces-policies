@@ -1,4 +1,13 @@
 [ {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/conformsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -20,8 +29,17 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/subject",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -47,6 +65,24 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/dx/prof/Profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dx/prof/ResourceDescriptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dx/prof/hasArtifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dx/prof/hasResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dx/prof/hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dx/prof/isProfileOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/odrl/2/Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -56,10 +92,43 @@
   "@id" : "http://www.w3.org/ns/odrl/2/includedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://w3id.org/dataspaces-policies/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Andreas Krimbacher"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Sebastian Neumaier"
+  }, {
+    "@value" : "Tobias Dam"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-07-16"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Sebastian Neumaier"
+  }, {
+    "@value" : "Tobias Dam"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  }, {
+    "@id" : "http://www.w3.org/ns/dx/prof/Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Spaces Profile Version 1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
   } ],
   "http://www.w3.org/2004/02/skos/core#member" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/absolutePosition"
@@ -222,17 +291,17 @@
   }, {
     "@id" : "http://www.w3.org/ns/odrl/2/watermark"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#bandwith"
+    "@id" : "https://w3id.org/dataspaces-policies/bandwith"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#bandwithUsage"
+    "@id" : "https://w3id.org/dataspaces-policies/bandwithUsage"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#conformsTo"
+    "@id" : "https://w3id.org/dataspaces-policies/conformsTo"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#membership"
+    "@id" : "https://w3id.org/dataspaces-policies/membership"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#qualityControl"
+    "@id" : "https://w3id.org/dataspaces-policies/qualityControl"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#update"
+    "@id" : "https://w3id.org/dataspaces-policies/update"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -241,9 +310,78 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "All terms of the Data Spaces Vocabulary"
+  } ],
+  "http://www.w3.org/ns/dx/prof/hasResource" : [ {
+    "@id" : "https://w3id.org/dataspaces-policies/ProfileSpec-html"
+  }, {
+    "@id" : "https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl"
+  } ],
+  "http://www.w3.org/ns/dx/prof/isProfileOf" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/core"
   } ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions",
+  "@id" : "https://w3id.org/dataspaces-policies/ProfileSpec-html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/conformsTo" : [ {
+    "@id" : "https://www.w3.org/TR/html/"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "https://www.iana.org/assignments/media-types/text/html"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-07-16"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Data Spaces Profile Version 1.0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dx/prof/hasArtifact" : [ {
+    "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html"
+  } ],
+  "http://www.w3.org/ns/dx/prof/hasRole" : [ {
+    "@id" : "http://www.w3.org/ns/dx/prof/role/specification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/conformsTo" : [ {
+    "@id" : "https://www.w3.org/TR/turtle/"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "https://www.iana.org/assignments/media-types/text/turtle"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-07-16"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Sebastian Neumaier"
+  }, {
+    "@value" : "Tobias Dam"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Data Spaces Profile Version 1.0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dx/prof/hasArtifact" : [ {
+    "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl"
+  } ],
+  "http://www.w3.org/ns/dx/prof/hasRole" : [ {
+    "@id" : "http://www.w3.org/ns/dx/prof/role/vocabulary"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/actions",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
@@ -323,11 +461,11 @@
   }, {
     "@id" : "http://www.w3.org/ns/odrl/2/watermark"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#bandwithUsage"
+    "@id" : "https://w3id.org/dataspaces-policies/bandwithUsage"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#qualityControl"
+    "@id" : "https://w3id.org/dataspaces-policies/qualityControl"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#update"
+    "@id" : "https://w3id.org/dataspaces-policies/update"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -338,7 +476,7 @@
     "@value" : "Data Spaces Vocabulary Terms"
   } ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations",
+  "@id" : "https://w3id.org/dataspaces-policies/assetRelations",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
@@ -355,7 +493,63 @@
     "@value" : "Data Spaces Vocabulary Terms"
   } ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand",
+  "@id" : "https://w3id.org/dataspaces-policies/bandwith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/dataspaces-policies/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bandwith for accessing resources"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Specifies the bandwith allowed for accessing the resource. "
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/bandwithUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "http://www.w3.org/ns/odrl/2/Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/dataspaces-policies/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Use bandwith"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Use bandwith when accessing a resource. "
+  } ],
+  "http://www.w3.org/ns/odrl/2/includedIn" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/use"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/conformsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/dataspaces-policies/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conforms to Schema"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/constraintLeftOperand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
@@ -425,11 +619,11 @@
   }, {
     "@id" : "http://www.w3.org/ns/odrl/2/virtualLocation"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#bandwithUsage"
+    "@id" : "https://w3id.org/dataspaces-policies/bandwithUsage"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#membership"
+    "@id" : "https://w3id.org/dataspaces-policies/membership"
   }, {
-    "@id" : "https://w3id.org/dataspace-policies/ns#qualityControl"
+    "@id" : "https://w3id.org/dataspaces-policies/qualityControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -440,7 +634,7 @@
     "@value" : "Data Spaces Vocabulary Terms"
   } ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp",
+  "@id" : "https://w3id.org/dataspaces-policies/constraintRightOp",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
@@ -457,7 +651,24 @@
     "@value" : "Data Spaces Vocabulary Terms"
   } ]
 }, {
-  "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles",
+  "@id" : "https://w3id.org/dataspaces-policies/membership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/dataspaces-policies/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Proofs Membership"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Defines the membership someone must have to acess a resource. "
+  } ]
+}, {
+  "@id" : "https://w3id.org/dataspaces-policies/partyRoles",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
@@ -490,53 +701,7 @@
     "@value" : "Data Spaces Vocabulary Terms"
   } ]
 }, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Andreas Krimbacher"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Sebastian Neumaier"
-  }, {
-    "@value" : "Tobias Dam"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is the RDF ontology for Data Spaces Profile 1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data Spaces Profile Version 1"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#bandwith",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Bandwith for accessing resources"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Specifies the bandwith allowed for accessing the resource. "
-  } ]
-}, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#bandwithUsage",
+  "@id" : "https://w3id.org/dataspaces-policies/qualityControl",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -544,63 +709,7 @@
     "@id" : "http://www.w3.org/ns/odrl/2/Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Use bandwith"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Use bandwith when accessing a resource. "
-  } ],
-  "http://www.w3.org/ns/odrl/2/includedIn" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/use"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#conformsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Conforms to Schema"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "
-  } ]
-}, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#membership",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Proofs Membership"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Defines the membership someone must have to acess a resource. "
-  } ]
-}, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#qualityControl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
+    "@id" : "https://w3id.org/dataspaces-policies/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -614,7 +723,7 @@
     "@id" : "http://www.w3.org/ns/odrl/2/use"
   } ]
 }, {
-  "@id" : "https://w3id.org/dataspace-policies/ns#update",
+  "@id" : "https://w3id.org/dataspaces-policies/update",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -622,7 +731,7 @@
     "@id" : "http://www.w3.org/ns/odrl/2/Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/dataspace-policies/ns#"
+    "@id" : "https://w3id.org/dataspaces-policies/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

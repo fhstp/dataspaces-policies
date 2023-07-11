@@ -1,12 +1,105 @@
-<https://w3id.org/dataspace-policies/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/dataspace-policies/ns#> <http://purl.org/dc/terms/contributor> "Andreas Krimbacher" .
-<https://w3id.org/dataspace-policies/ns#> <http://purl.org/dc/terms/creator> "Sebastian Neumaier" .
-<https://w3id.org/dataspace-policies/ns#> <http://purl.org/dc/terms/creator> "Tobias Dam" .
-<https://w3id.org/dataspace-policies/ns#> <http://purl.org/dc/terms/description> "The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en .
-<https://w3id.org/dataspace-policies/ns#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/dataspace-policies/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the RDF ontology for Data Spaces Profile 1"@en .
-<https://w3id.org/dataspace-policies/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "Data Spaces Profile Version 1"@en .
-<https://w3id.org/dataspace-policies/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/elements/1.1/contributor> "Andreas Krimbacher" .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/elements/1.1/creator> "Sebastian Neumaier" .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/elements/1.1/creator> "Tobias Dam" .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/terms/description> "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/terms/issued> "2023-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/terms/publisher> "Sebastian Neumaier" .
+<https://w3id.org/dataspaces-policies/> <http://purl.org/dc/terms/publisher> "Tobias Dam" .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2000/01/rdf-schema#label> "Data Spaces Profile Version 1"@en .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSize> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/aggregate> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/annotate> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/anonymize> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/archive> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attribute> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensate> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatedParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatingParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/concurrentUse> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentedParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentingParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/count> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/dateTime> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delayPeriod> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delete> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/deliveryChannel> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/derive> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/digitize> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/display> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/distribute> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/elapsedTime> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/ensureExclusivity> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/event> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/execute> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/extract> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/fileFormat> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/give> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/grantUse> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/include> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/index> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/industry> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/inform> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informedParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informingParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/language> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/media> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/meteredTime> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/modify> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/move> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/nextPolicy> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/obtainConsent> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/payAmount> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/percentage> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/play> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/present> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/print> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/product> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/purpose> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/recipient> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativePosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSize> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reproduce> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/resolution> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reviewPolicy> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/sell> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatial> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatialCoordinates> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/stream> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/synchronize> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/systemDevice> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/textToSpeech> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/timeInterval> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackedParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackingParty> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/transform> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/translate> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/unitOfCount> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/version> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/virtualLocation> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/watermark> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/bandwith> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/bandwithUsage> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/conformsTo> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/membership> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/qualityControl> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/update> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Spaces Profile Vocabulary"@en .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/2004/02/skos/core#scopeNote> "All terms of the Data Spaces Vocabulary"@en .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/ns/dx/prof/hasResource> <https://w3id.org/dataspaces-policies/ProfileSpec-html> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/ns/dx/prof/hasResource> <https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/ns/dx/prof/isProfileOf> <http://www.w3.org/ns/odrl/2/core> .
 # 
 # 
 # #################################################################
@@ -15,6 +108,15 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -37,8 +139,14 @@
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/subject
 <http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -55,8 +163,32 @@
 # http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/dx/prof/hasArtifact
+<http://www.w3.org/ns/dx/prof/hasArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dx/prof/hasResource
+<http://www.w3.org/ns/dx/prof/hasResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dx/prof/hasRole
+<http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dx/prof/isProfileOf
+<http://www.w3.org/ns/dx/prof/isProfileOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/odrl/2/includedIn
 <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -76,6 +208,12 @@
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.w3.org/ns/dx/prof/Profile
+<http://www.w3.org/ns/dx/prof/Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dx/prof/ResourceDescriptor
+<http://www.w3.org/ns/dx/prof/ResourceDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/ns/odrl/2/Action
 <http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -91,260 +229,197 @@
 # #################################################################
 # 
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/aggregate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/annotate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/anonymize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/archive> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attribute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/concurrentUse> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/count> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/dateTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delayPeriod> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delete> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/deliveryChannel> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/derive> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/digitize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/display> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/distribute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/elapsedTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/ensureExclusivity> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/event> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/execute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/extract> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/fileFormat> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/give> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/grantUse> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/include> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/index> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/industry> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/inform> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/language> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/media> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/meteredTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/modify> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/move> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/nextPolicy> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/obtainConsent> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/payAmount> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/percentage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/play> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/present> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/print> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/product> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/purpose> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/recipient> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativePosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reproduce> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/resolution> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reviewPolicy> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/sell> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatial> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatialCoordinates> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/stream> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/synchronize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/systemDevice> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/textToSpeech> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/timeInterval> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/transform> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/translate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/unitOfCount> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/version> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/virtualLocation> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/watermark> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#bandwith> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#bandwithUsage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#conformsTo> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#membership> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#qualityControl> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#update> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Spaces Profile Vocabulary"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> <http://www.w3.org/2004/02/skos/core#scopeNote> "All terms of the Data Spaces Vocabulary"@en .
+# https://w3id.org/dataspaces-policies/
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dx/prof/Profile> .
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/aggregate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/annotate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/anonymize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/archive> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attribute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/concurrentUse> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delete> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/derive> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/digitize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/display> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/distribute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/ensureExclusivity> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/execute> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/extract> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/give> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/grantUse> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/include> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/index> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/inform> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/modify> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/move> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/nextPolicy> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/obtainConsent> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/play> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/present> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/print> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reproduce> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reviewPolicy> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/sell> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/stream> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/synchronize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/textToSpeech> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/transform> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/translate> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/watermark> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#bandwithUsage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#qualityControl> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#update> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#prefLabel> "Actions for Rules"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# https://w3id.org/dataspaces-policies/ProfileSpec-html
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dx/prof/ResourceDescriptor> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/html/> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/format> <https://www.iana.org/assignments/media-types/text/html> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/issued> "2023-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/specification> .
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asset Relations"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dx/prof/ResourceDescriptor> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/turtle/> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/format> <https://www.iana.org/assignments/media-types/text/turtle> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/issued> "2023-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/publisher> "Sebastian Neumaier" .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/publisher> "Tobias Dam" .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/vocabulary> .
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/count> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/dateTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delayPeriod> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/deliveryChannel> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/elapsedTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/event> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/fileFormat> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/industry> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/language> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/media> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/meteredTime> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/payAmount> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/percentage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/product> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/purpose> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/recipient> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativePosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSize> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/resolution> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatial> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatialCoordinates> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/systemDevice> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/timeInterval> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/unitOfCount> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/version> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/virtualLocation> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#bandwithUsage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#membership> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspace-policies/ns#qualityControl> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Left Operands"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# https://w3id.org/dataspaces-policies/actions
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/aggregate> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/annotate> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/anonymize> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/archive> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attribute> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensate> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/concurrentUse> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delete> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/derive> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/digitize> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/display> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/distribute> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/ensureExclusivity> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/execute> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/extract> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/give> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/grantUse> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/include> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/index> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/inform> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/modify> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/move> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/nextPolicy> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/obtainConsent> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/play> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/present> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/print> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reproduce> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/reviewPolicy> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/sell> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/stream> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/synchronize> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/textToSpeech> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/transform> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/translate> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/watermark> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/bandwithUsage> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/qualityControl> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/update> .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#prefLabel> "Actions for Rules"@en .
+<https://w3id.org/dataspaces-policies/actions> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Right Operands"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# https://w3id.org/dataspaces-policies/assetRelations
+<https://w3id.org/dataspaces-policies/assetRelations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/assetRelations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/assetRelations> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> .
+<https://w3id.org/dataspaces-policies/assetRelations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asset Relations"@en .
+<https://w3id.org/dataspaces-policies/assetRelations> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 # 
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackedParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackingParty> .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#prefLabel> "Party Functions"@en .
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# https://w3id.org/dataspaces-policies/bandwith
+<https://w3id.org/dataspaces-policies/bandwith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/bandwith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
+<https://w3id.org/dataspaces-policies/bandwith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/bandwith> <http://www.w3.org/2000/01/rdf-schema#label> "Bandwith for accessing resources"@en .
+<https://w3id.org/dataspaces-policies/bandwith> <http://www.w3.org/2004/02/skos/core#definition> "Specifies the bandwith allowed for accessing the resource. "@en .
 # 
-# https://w3id.org/dataspace-policies/ns#bandwith
-<https://w3id.org/dataspace-policies/ns#bandwith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#bandwith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
-<https://w3id.org/dataspace-policies/ns#bandwith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#bandwith> <http://www.w3.org/2000/01/rdf-schema#label> "Bandwith for accessing resources"@en .
-<https://w3id.org/dataspace-policies/ns#bandwith> <http://www.w3.org/2004/02/skos/core#definition> "Specifies the bandwith allowed for accessing the resource. "@en .
+# https://w3id.org/dataspaces-policies/bandwithUsage
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/2000/01/rdf-schema#label> "Use bandwith"@en .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/2004/02/skos/core#definition> "Use bandwith when accessing a resource. "@en .
+<https://w3id.org/dataspaces-policies/bandwithUsage> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
 # 
-# https://w3id.org/dataspace-policies/ns#bandwithUsage
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/2000/01/rdf-schema#label> "Use bandwith"@en .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/2004/02/skos/core#definition> "Use bandwith when accessing a resource. "@en .
-<https://w3id.org/dataspace-policies/ns#bandwithUsage> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
+# https://w3id.org/dataspaces-policies/conformsTo
+<https://w3id.org/dataspaces-policies/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
+<https://w3id.org/dataspaces-policies/conformsTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/conformsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Conforms to Schema"@en .
+<https://w3id.org/dataspaces-policies/conformsTo> <http://www.w3.org/2004/02/skos/core#definition> "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "@en .
 # 
-# https://w3id.org/dataspace-policies/ns#conformsTo
-<https://w3id.org/dataspace-policies/ns#conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
-<https://w3id.org/dataspace-policies/ns#conformsTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#conformsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Conforms to Schema"@en .
-<https://w3id.org/dataspace-policies/ns#conformsTo> <http://www.w3.org/2004/02/skos/core#definition> "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "@en .
+# https://w3id.org/dataspaces-policies/constraintLeftOperand
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSize> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/count> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/dateTime> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/delayPeriod> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/deliveryChannel> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/elapsedTime> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/event> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/fileFormat> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/industry> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/language> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/media> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/meteredTime> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/payAmount> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/percentage> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/product> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/purpose> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/recipient> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativePosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSize> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/resolution> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatial> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/spatialCoordinates> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/systemDevice> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/timeInterval> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/unitOfCount> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/version> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/virtualLocation> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/bandwithUsage> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/membership> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/dataspaces-policies/qualityControl> .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Left Operands"@en .
+<https://w3id.org/dataspaces-policies/constraintLeftOperand> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 # 
-# https://w3id.org/dataspace-policies/ns#membership
-<https://w3id.org/dataspace-policies/ns#membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
-<https://w3id.org/dataspace-policies/ns#membership> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#membership> <http://www.w3.org/2000/01/rdf-schema#label> "Proofs Membership"@en .
-<https://w3id.org/dataspace-policies/ns#membership> <http://www.w3.org/2004/02/skos/core#definition> "Defines the membership someone must have to acess a resource. "@en .
+# https://w3id.org/dataspaces-policies/constraintRightOp
+<https://w3id.org/dataspaces-policies/constraintRightOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/constraintRightOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/constraintRightOp> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> .
+<https://w3id.org/dataspaces-policies/constraintRightOp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Right Operands"@en .
+<https://w3id.org/dataspaces-policies/constraintRightOp> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 # 
-# https://w3id.org/dataspace-policies/ns#qualityControl
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/2000/01/rdf-schema#label> "Perform quality control"@en .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/2004/02/skos/core#definition> "Perform quality control on the resource provided. "@en .
-<https://w3id.org/dataspace-policies/ns#qualityControl> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
+# https://w3id.org/dataspaces-policies/membership
+<https://w3id.org/dataspaces-policies/membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/LeftOperand> .
+<https://w3id.org/dataspaces-policies/membership> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/membership> <http://www.w3.org/2000/01/rdf-schema#label> "Proofs Membership"@en .
+<https://w3id.org/dataspaces-policies/membership> <http://www.w3.org/2004/02/skos/core#definition> "Defines the membership someone must have to acess a resource. "@en .
 # 
-# https://w3id.org/dataspace-policies/ns#update
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspace-policies/ns#> .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/2000/01/rdf-schema#label> "Update Data"@en .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/2004/02/skos/core#definition> "Update the resource provided. "@en .
-<https://w3id.org/dataspace-policies/ns#update> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
+# https://w3id.org/dataspaces-policies/partyRoles
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatedParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/compensatingParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentedParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/consentingParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informedParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/informingParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackedParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/trackingParty> .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#prefLabel> "Party Functions"@en .
+<https://w3id.org/dataspaces-policies/partyRoles> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+# 
+# https://w3id.org/dataspaces-policies/qualityControl
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/2000/01/rdf-schema#label> "Perform quality control"@en .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/2004/02/skos/core#definition> "Perform quality control on the resource provided. "@en .
+<https://w3id.org/dataspaces-policies/qualityControl> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
+# 
+# https://w3id.org/dataspaces-policies/update
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dataspaces-policies/> .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/2000/01/rdf-schema#label> "Update Data"@en .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/2004/02/skos/core#definition> "Update the resource provided. "@en .
+<https://w3id.org/dataspaces-policies/update> <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

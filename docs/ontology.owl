@@ -1,23 +1,118 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/dataspace-policies/ns#"
-     xml:base="https://w3id.org/dataspace-policies/ns"
+<rdf:RDF xmlns="https://w3id.org/dataspaces-policies/"
+     xml:base="https://w3id.org/dataspaces-policies/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:prof="http://www.w3.org/ns/dx/prof/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/dataspace-policies/ns#">
-        <terms:contributor>Andreas Krimbacher</terms:contributor>
-        <terms:creator>Sebastian Neumaier</terms:creator>
-        <terms:creator>Tobias Dam</terms:creator>
-        <terms:description xml:lang="en">The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces.</terms:description>
+    <owl:Ontology rdf:about="https://w3id.org/dataspaces-policies/">
+        <dc:contributor>Andreas Krimbacher</dc:contributor>
+        <dc:creator>Sebastian Neumaier</dc:creator>
+        <dc:creator>Tobias Dam</dc:creator>
+        <terms:description xml:lang="en">The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-16</terms:issued>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <rdfs:comment xml:lang="en">This is the RDF ontology for Data Spaces Profile 1</rdfs:comment>
+        <terms:publisher>Sebastian Neumaier</terms:publisher>
+        <terms:publisher>Tobias Dam</terms:publisher>
         <rdfs:label xml:lang="en">Data Spaces Profile Version 1</rdfs:label>
         <owl:versionInfo>1.0</owl:versionInfo>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absolutePosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteSize"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteSpatialPosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteTemporalPosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/acceptTracking"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/aggregate"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/annotate"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/anonymize"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/archive"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/attribute"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/attributedParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensate"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensatedParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensatingParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/concurrentUse"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/consentedParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/consentingParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/count"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/dateTime"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/delayPeriod"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/delete"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/deliveryChannel"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/derive"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/digitize"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/display"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/distribute"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/elapsedTime"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/ensureExclusivity"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/event"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/execute"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/extract"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/fileFormat"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/give"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/grantUse"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/include"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/index"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/industry"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/inform"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/informedParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/informingParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/language"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/media"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/meteredTime"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/modify"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/move"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/nextPolicy"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/obtainConsent"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/output"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/payAmount"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/percentage"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/play"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/policyUsage"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/present"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/print"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/product"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/purpose"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/recipient"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativePosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeSize"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeSpatialPosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeTemporalPosition"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/reproduce"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/resolution"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/reviewPolicy"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/sell"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/spatial"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/spatialCoordinates"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/stream"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/synchronize"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/systemDevice"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/textToSpeech"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/timeInterval"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/trackedParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/trackingParty"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/transform"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/translate"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/unitOfCount"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/version"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/virtualLocation"/>
+        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/watermark"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/bandwith"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/bandwithUsage"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/conformsTo"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/membership"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/qualityControl"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/update"/>
+        <skos:prefLabel xml:lang="en">Data Spaces Profile Vocabulary</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">All terms of the Data Spaces Vocabulary</skos:scopeNote>
+        <prof:hasResource rdf:resource="https://w3id.org/dataspaces-policies/ProfileSpec-html"/>
+        <prof:hasResource rdf:resource="https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl"/>
+        <prof:isProfileOf rdf:resource="http://www.w3.org/ns/odrl/2/core"/>
     </owl:Ontology>
     
 
@@ -31,6 +126,27 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo"/>
     
 
 
@@ -83,10 +199,24 @@
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://purl.org/dc/terms/subject -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -125,10 +255,57 @@
     
 
 
+    <!-- http://www.w3.org/ns/dx/prof/hasArtifact -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dx/prof/hasArtifact"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dx/prof/hasResource -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dx/prof/hasResource"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dx/prof/hasRole -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dx/prof/hasRole"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dx/prof/isProfileOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dx/prof/isProfileOf"/>
+    
+
+
     <!-- http://www.w3.org/ns/odrl/2/includedIn -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/includedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -165,6 +342,20 @@
     
 
 
+    <!-- http://www.w3.org/ns/dx/prof/Profile -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dx/prof/Profile"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dx/prof/ResourceDescriptor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dx/prof/ResourceDescriptor"/>
+    
+
+
     <!-- http://www.w3.org/ns/odrl/2/Action -->
 
 
@@ -191,107 +382,54 @@
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl -->
+    <!-- https://w3id.org/dataspaces-policies/ -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absolutePosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteSize"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteSpatialPosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteTemporalPosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/acceptTracking"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/aggregate"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/annotate"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/anonymize"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/archive"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/attribute"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/attributedParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensate"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensatedParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensatingParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/concurrentUse"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/consentedParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/consentingParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/count"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/dateTime"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/delayPeriod"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/delete"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/deliveryChannel"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/derive"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/digitize"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/display"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/distribute"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/elapsedTime"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/ensureExclusivity"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/event"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/execute"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/extract"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/fileFormat"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/give"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/grantUse"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/include"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/index"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/industry"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/inform"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/informedParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/informingParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/language"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/media"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/meteredTime"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/modify"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/move"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/nextPolicy"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/obtainConsent"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/output"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/payAmount"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/percentage"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/play"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/policyUsage"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/present"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/print"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/product"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/purpose"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/recipient"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativePosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeSize"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeSpatialPosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/relativeTemporalPosition"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/reproduce"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/resolution"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/reviewPolicy"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/sell"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/spatial"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/spatialCoordinates"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/stream"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/synchronize"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/systemDevice"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/textToSpeech"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/timeInterval"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/trackedParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/trackingParty"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/transform"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/translate"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/unitOfCount"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/version"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/virtualLocation"/>
-        <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/watermark"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#bandwith"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#bandwithUsage"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#conformsTo"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#membership"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#qualityControl"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#update"/>
-        <skos:prefLabel xml:lang="en">Data Spaces Profile Vocabulary</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">All terms of the Data Spaces Vocabulary</skos:scopeNote>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions -->
+    <!-- https://w3id.org/dataspaces-policies/ProfileSpec-html -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/ProfileSpec-html">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/ResourceDescriptor"/>
+        <terms:conformsTo rdf:resource="https://www.w3.org/TR/html/"/>
+        <terms:format rdf:resource="https://www.iana.org/assignments/media-types/text/html"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-16</terms:issued>
+        <terms:title>Data Spaces Profile Version 1.0</terms:title>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <prof:hasArtifact rdf:resource="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html"/>
+        <prof:hasRole rdf:resource="http://www.w3.org/ns/dx/prof/role/specification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/ResourceDescriptor"/>
+        <terms:conformsTo rdf:resource="https://www.w3.org/TR/turtle/"/>
+        <terms:format rdf:resource="https://www.iana.org/assignments/media-types/text/turtle"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-16</terms:issued>
+        <terms:publisher>Sebastian Neumaier</terms:publisher>
+        <terms:publisher>Tobias Dam</terms:publisher>
+        <terms:title>Data Spaces Profile Version 1.0</terms:title>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <prof:hasArtifact rdf:resource="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl"/>
+        <prof:hasRole rdf:resource="http://www.w3.org/ns/dx/prof/role/vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/actions -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/actions">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/acceptTracking"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/aggregate"/>
@@ -330,19 +468,19 @@
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/transform"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/translate"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/watermark"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#bandwithUsage"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#qualityControl"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#update"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/bandwithUsage"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/qualityControl"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/update"/>
         <skos:prefLabel xml:lang="en">Actions for Rules</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Data Spaces Vocabulary Terms</skos:scopeNote>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations -->
+    <!-- https://w3id.org/dataspaces-policies/assetRelations -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/assetRelations">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/output"/>
         <skos:prefLabel xml:lang="en">Asset Relations</skos:prefLabel>
@@ -351,10 +489,48 @@
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand -->
+    <!-- https://w3id.org/dataspaces-policies/bandwith -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/bandwith">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
+        <rdfs:label xml:lang="en">Bandwith for accessing resources</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the bandwith allowed for accessing the resource. </skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/bandwithUsage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/bandwithUsage">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
+        <rdfs:label xml:lang="en">Use bandwith</rdfs:label>
+        <skos:definition xml:lang="en">Use bandwith when accessing a resource. </skos:definition>
+        <odrl:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/conformsTo -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/conformsTo">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
+        <rdfs:label xml:lang="en">Conforms to Schema</rdfs:label>
+        <skos:definition xml:lang="en">Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. </skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/constraintLeftOperand -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/constraintLeftOperand">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absolutePosition"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/absoluteSize"/>
@@ -388,19 +564,19 @@
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/unitOfCount"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/version"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/virtualLocation"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#bandwithUsage"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#membership"/>
-        <skos:member rdf:resource="https://w3id.org/dataspace-policies/ns#qualityControl"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/bandwithUsage"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/membership"/>
+        <skos:member rdf:resource="https://w3id.org/dataspaces-policies/qualityControl"/>
         <skos:prefLabel xml:lang="en">Constraint Left Operands</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Data Spaces Vocabulary Terms</skos:scopeNote>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp -->
+    <!-- https://w3id.org/dataspaces-policies/constraintRightOp -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/constraintRightOp">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/policyUsage"/>
         <skos:prefLabel xml:lang="en">Constraint Right Operands</skos:prefLabel>
@@ -409,10 +585,22 @@
     
 
 
-    <!-- https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles -->
+    <!-- https://w3id.org/dataspaces-policies/membership -->
 
 
-    <owl:NamedIndividual rdf:about="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/membership">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
+        <rdfs:label xml:lang="en">Proofs Membership</rdfs:label>
+        <skos:definition xml:lang="en">Defines the membership someone must have to acess a resource. </skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dataspaces-policies/partyRoles -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/partyRoles">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/attributedParty"/>
         <skos:member rdf:resource="http://www.w3.org/ns/odrl/2/compensatedParty"/>
@@ -429,63 +617,13 @@
     
 
 
-    <!-- https://w3id.org/dataspace-policies/ns#bandwith -->
+    <!-- https://w3id.org/dataspaces-policies/qualityControl -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#bandwith">
-        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
-        <rdfs:label xml:lang="en">Bandwith for accessing resources</rdfs:label>
-        <skos:definition xml:lang="en">Specifies the bandwith allowed for accessing the resource. </skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dataspace-policies/ns#bandwithUsage -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#bandwithUsage">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/qualityControl">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
-        <rdfs:label xml:lang="en">Use bandwith</rdfs:label>
-        <skos:definition xml:lang="en">Use bandwith when accessing a resource. </skos:definition>
-        <odrl:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dataspace-policies/ns#conformsTo -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#conformsTo">
-        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
-        <rdfs:label xml:lang="en">Conforms to Schema</rdfs:label>
-        <skos:definition xml:lang="en">Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. </skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dataspace-policies/ns#membership -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#membership">
-        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
-        <rdfs:label xml:lang="en">Proofs Membership</rdfs:label>
-        <skos:definition xml:lang="en">Defines the membership someone must have to acess a resource. </skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dataspace-policies/ns#qualityControl -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#qualityControl">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
         <rdfs:label xml:lang="en">Perform quality control</rdfs:label>
         <skos:definition xml:lang="en">Perform quality control on the resource provided. </skos:definition>
         <odrl:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
@@ -493,13 +631,13 @@
     
 
 
-    <!-- https://w3id.org/dataspace-policies/ns#update -->
+    <!-- https://w3id.org/dataspaces-policies/update -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/dataspace-policies/ns#update">
+    <owl:NamedIndividual rdf:about="https://w3id.org/dataspaces-policies/update">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspace-policies/ns#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dataspaces-policies/"/>
         <rdfs:label xml:lang="en">Update Data</rdfs:label>
         <skos:definition xml:lang="en">Update the resource provided. </skos:definition>
         <odrl:includedIn rdf:resource="http://www.w3.org/ns/odrl/2/use"/>

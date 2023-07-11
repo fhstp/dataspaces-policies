@@ -1,24 +1,129 @@
-@prefix : <https://w3id.org/dataspace-policies/ns#> .
+@prefix : <https://w3id.org/dataspaces-policies/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/dataspace-policies/ns#> .
+@base <https://w3id.org/dataspaces-policies/> .
 
-<https://w3id.org/dataspace-policies/ns#> rdf:type owl:Ontology ;
-                                           <http://purl.org/dc/terms/contributor> "Andreas Krimbacher" ;
-                                           <http://purl.org/dc/terms/creator> "Sebastian Neumaier" ,
+<https://w3id.org/dataspaces-policies/> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/elements/1.1/contributor> "Andreas Krimbacher" ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Sebastian Neumaier" ,
+                                                                                   "Tobias Dam" ;
+                                         <http://purl.org/dc/terms/description> "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en ;
+                                         <http://purl.org/dc/terms/issued> "2023-07-16"^^xsd:date ;
+                                         <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                         <http://purl.org/dc/terms/publisher> "Sebastian Neumaier" ,
                                                                               "Tobias Dam" ;
-                                           <http://purl.org/dc/terms/description> "The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en ;
-                                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                                           rdfs:comment "This is the RDF ontology for Data Spaces Profile 1"@en ;
-                                           rdfs:label "Data Spaces Profile Version 1"@en ;
-                                           owl:versionInfo "1.0" .
+                                         rdfs:label "Data Spaces Profile Version 1"@en ;
+                                         owl:versionInfo "1.0" ;
+                                         <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/absoluteSize> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/acceptTracking> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/aggregate> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/annotate> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/anonymize> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/archive> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/attribute> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/attributedParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/compensate> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/compensatedParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/compensatingParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/concurrentUse> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/consentedParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/consentingParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/count> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/dateTime> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/delayPeriod> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/delete> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/deliveryChannel> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/derive> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/digitize> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/display> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/distribute> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/elapsedTime> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/ensureExclusivity> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/event> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/execute> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/extract> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/fileFormat> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/give> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/grantUse> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/include> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/index> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/industry> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/inform> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/informedParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/informingParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/language> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/media> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/meteredTime> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/modify> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/move> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/nextPolicy> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/obtainConsent> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/output> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/payAmount> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/percentage> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/play> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/policyUsage> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/present> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/print> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/product> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/purpose> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/recipient> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/relativePosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/relativeSize> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/reproduce> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/resolution> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/reviewPolicy> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/sell> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/spatial> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/spatialCoordinates> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/stream> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/synchronize> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/systemDevice> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/textToSpeech> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/timeInterval> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/trackedParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/trackingParty> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/transform> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/translate> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/unitOfCount> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/version> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/virtualLocation> ,
+                                                                                      <http://www.w3.org/ns/odrl/2/watermark> ,
+                                                                                      :bandwith ,
+                                                                                      :bandwithUsage ,
+                                                                                      :conformsTo ,
+                                                                                      :membership ,
+                                                                                      :qualityControl ,
+                                                                                      :update ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Spaces Profile Vocabulary"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "All terms of the Data Spaces Vocabulary"@en ;
+                                         <http://www.w3.org/ns/dx/prof/hasResource> :ProfileSpec-html ,
+                                                                                    :ProfileVocabulary-ttl ;
+                                         <http://www.w3.org/ns/dx/prof/isProfileOf> <http://www.w3.org/ns/odrl/2/core> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
@@ -48,8 +153,16 @@
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/subject
 <http://purl.org/dc/terms/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -72,8 +185,32 @@
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/dx/prof/hasArtifact
+<http://www.w3.org/ns/dx/prof/hasArtifact> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dx/prof/hasResource
+<http://www.w3.org/ns/dx/prof/hasResource> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dx/prof/hasRole
+<http://www.w3.org/ns/dx/prof/hasRole> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dx/prof/isProfileOf
+<http://www.w3.org/ns/dx/prof/isProfileOf> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/odrl/2/includedIn
 <http://www.w3.org/ns/odrl/2/includedIn> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -92,6 +229,14 @@
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/dx/prof/Profile
+<http://www.w3.org/ns/dx/prof/Profile> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dx/prof/ResourceDescriptor
+<http://www.w3.org/ns/dx/prof/ResourceDescriptor> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/ns/odrl/2/Action
 <http://www.w3.org/ns/odrl/2/Action> rdf:type owl:Class .
 
@@ -104,269 +249,208 @@
 #    Individuals
 #################################################################
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> rdf:type owl:NamedIndividual ,
-                                                                                                                                             <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                    <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/absoluteSize> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/acceptTracking> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/aggregate> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/annotate> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/anonymize> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/archive> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/attribute> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/attributedParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/compensate> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/compensatedParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/compensatingParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/concurrentUse> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/consentedParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/consentingParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/count> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/dateTime> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/delayPeriod> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/delete> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/deliveryChannel> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/derive> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/digitize> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/display> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/distribute> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/elapsedTime> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/ensureExclusivity> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/event> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/execute> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/extract> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/fileFormat> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/give> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/grantUse> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/include> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/index> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/industry> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/inform> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/informedParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/informingParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/language> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/media> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/meteredTime> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/modify> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/move> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/nextPolicy> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/obtainConsent> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/output> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/payAmount> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/percentage> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/play> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/policyUsage> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/present> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/print> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/product> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/purpose> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/recipient> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/relativePosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/relativeSize> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/reproduce> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/resolution> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/reviewPolicy> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/sell> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/spatial> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/spatialCoordinates> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/stream> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/synchronize> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/systemDevice> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/textToSpeech> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/timeInterval> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/trackedParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/trackingParty> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/transform> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/translate> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/unitOfCount> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/version> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/virtualLocation> ,
-                                                                                                                                                                                 <http://www.w3.org/ns/odrl/2/watermark> ,
-                                                                                                                                                                                 :bandwith ,
-                                                                                                                                                                                 :bandwithUsage ,
-                                                                                                                                                                                 :conformsTo ,
-                                                                                                                                                                                 :membership ,
-                                                                                                                                                                                 :qualityControl ,
-                                                                                                                                                                                 :update ;
-                                                                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Spaces Profile Vocabulary"@en ;
-                                                                                                                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "All terms of the Data Spaces Vocabulary"@en .
+###  https://w3id.org/dataspaces-policies/
+<https://w3id.org/dataspaces-policies/> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2004/02/skos/core#Collection> ,
+                                                 <http://www.w3.org/ns/dx/prof/Profile> .
 
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions> rdf:type owl:NamedIndividual ,
-                                                                                                                                                     <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                            <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/aggregate> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/annotate> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/anonymize> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/archive> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/attribute> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/compensate> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/concurrentUse> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/delete> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/derive> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/digitize> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/display> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/distribute> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/ensureExclusivity> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/execute> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/extract> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/give> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/grantUse> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/include> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/index> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/inform> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/modify> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/move> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/nextPolicy> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/obtainConsent> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/play> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/present> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/print> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/reproduce> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/reviewPolicy> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/sell> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/stream> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/synchronize> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/textToSpeech> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/transform> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/translate> ,
-                                                                                                                                                                                         <http://www.w3.org/ns/odrl/2/watermark> ,
-                                                                                                                                                                                         :bandwithUsage ,
-                                                                                                                                                                                         :qualityControl ,
-                                                                                                                                                                                         :update ;
-                                                                                                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Actions for Rules"@en ;
-                                                                                                                                            <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+###  https://w3id.org/dataspaces-policies/ProfileSpec-html
+:ProfileSpec-html rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/ns/dx/prof/ResourceDescriptor> ;
+                  <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/html/> ;
+                  <http://purl.org/dc/terms/format> <https://www.iana.org/assignments/media-types/text/html> ;
+                  <http://purl.org/dc/terms/issued> "2023-07-16"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" ;
+                  owl:versionInfo "1.0" ;
+                  <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> ;
+                  <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/specification> .
 
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations> rdf:type owl:NamedIndividual ,
-                                                                                                                                                            <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                                   <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> ;
-                                                                                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Asset Relations"@en ;
-                                                                                                                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+###  https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl
+:ProfileVocabulary-ttl rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/ns/dx/prof/ResourceDescriptor> ;
+                       <http://purl.org/dc/terms/conformsTo> <https://www.w3.org/TR/turtle/> ;
+                       <http://purl.org/dc/terms/format> <https://www.iana.org/assignments/media-types/text/turtle> ;
+                       <http://purl.org/dc/terms/issued> "2023-07-16"^^xsd:date ;
+                       <http://purl.org/dc/terms/publisher> "Sebastian Neumaier" ,
+                                                            "Tobias Dam" ;
+                       <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" ;
+                       owl:versionInfo "1.0" ;
+                       <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
+                       <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/vocabulary> .
 
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand> rdf:type owl:NamedIndividual ,
-                                                                                                                                                                   <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                                          <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/absoluteSize> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/count> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/dateTime> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/delayPeriod> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/deliveryChannel> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/elapsedTime> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/event> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/fileFormat> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/industry> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/language> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/media> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/meteredTime> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/payAmount> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/percentage> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/product> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/purpose> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/recipient> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/relativePosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/relativeSize> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/resolution> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/spatial> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/spatialCoordinates> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/systemDevice> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/timeInterval> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/unitOfCount> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/version> ,
-                                                                                                                                                                                                       <http://www.w3.org/ns/odrl/2/virtualLocation> ,
-                                                                                                                                                                                                       :bandwithUsage ,
-                                                                                                                                                                                                       :membership ,
-                                                                                                                                                                                                       :qualityControl ;
-                                                                                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Left Operands"@en ;
-                                                                                                                                                          <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+###  https://w3id.org/dataspaces-policies/actions
+:actions rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Collection> ;
+         <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/acceptTracking> ,
+                                                      <http://www.w3.org/ns/odrl/2/aggregate> ,
+                                                      <http://www.w3.org/ns/odrl/2/annotate> ,
+                                                      <http://www.w3.org/ns/odrl/2/anonymize> ,
+                                                      <http://www.w3.org/ns/odrl/2/archive> ,
+                                                      <http://www.w3.org/ns/odrl/2/attribute> ,
+                                                      <http://www.w3.org/ns/odrl/2/compensate> ,
+                                                      <http://www.w3.org/ns/odrl/2/concurrentUse> ,
+                                                      <http://www.w3.org/ns/odrl/2/delete> ,
+                                                      <http://www.w3.org/ns/odrl/2/derive> ,
+                                                      <http://www.w3.org/ns/odrl/2/digitize> ,
+                                                      <http://www.w3.org/ns/odrl/2/display> ,
+                                                      <http://www.w3.org/ns/odrl/2/distribute> ,
+                                                      <http://www.w3.org/ns/odrl/2/ensureExclusivity> ,
+                                                      <http://www.w3.org/ns/odrl/2/execute> ,
+                                                      <http://www.w3.org/ns/odrl/2/extract> ,
+                                                      <http://www.w3.org/ns/odrl/2/give> ,
+                                                      <http://www.w3.org/ns/odrl/2/grantUse> ,
+                                                      <http://www.w3.org/ns/odrl/2/include> ,
+                                                      <http://www.w3.org/ns/odrl/2/index> ,
+                                                      <http://www.w3.org/ns/odrl/2/inform> ,
+                                                      <http://www.w3.org/ns/odrl/2/modify> ,
+                                                      <http://www.w3.org/ns/odrl/2/move> ,
+                                                      <http://www.w3.org/ns/odrl/2/nextPolicy> ,
+                                                      <http://www.w3.org/ns/odrl/2/obtainConsent> ,
+                                                      <http://www.w3.org/ns/odrl/2/play> ,
+                                                      <http://www.w3.org/ns/odrl/2/present> ,
+                                                      <http://www.w3.org/ns/odrl/2/print> ,
+                                                      <http://www.w3.org/ns/odrl/2/reproduce> ,
+                                                      <http://www.w3.org/ns/odrl/2/reviewPolicy> ,
+                                                      <http://www.w3.org/ns/odrl/2/sell> ,
+                                                      <http://www.w3.org/ns/odrl/2/stream> ,
+                                                      <http://www.w3.org/ns/odrl/2/synchronize> ,
+                                                      <http://www.w3.org/ns/odrl/2/textToSpeech> ,
+                                                      <http://www.w3.org/ns/odrl/2/transform> ,
+                                                      <http://www.w3.org/ns/odrl/2/translate> ,
+                                                      <http://www.w3.org/ns/odrl/2/watermark> ,
+                                                      :bandwithUsage ,
+                                                      :qualityControl ,
+                                                      :update ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Actions for Rules"@en ;
+         <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp> rdf:type owl:NamedIndividual ,
-                                                                                                                                                               <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> ;
-                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Right Operands"@en ;
-                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+###  https://w3id.org/dataspaces-policies/assetRelations
+:assetRelations rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2004/02/skos/core#Collection> ;
+                <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/output> ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Asset Relations"@en ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
 
 
-###  https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles> rdf:type owl:NamedIndividual ,
-                                                                                                                                                        <http://www.w3.org/2004/02/skos/core#Collection> ;
-                                                                                                                                               <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/compensatedParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/compensatingParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/consentedParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/consentingParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/informedParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/informingParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/trackedParty> ,
-                                                                                                                                                                                            <http://www.w3.org/ns/odrl/2/trackingParty> ;
-                                                                                                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Party Functions"@en ;
-                                                                                                                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
-
-
-###  https://w3id.org/dataspace-policies/ns#bandwith
+###  https://w3id.org/dataspaces-policies/bandwith
 :bandwith rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/ns/odrl/2/LeftOperand> ;
-          rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+          rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
           rdfs:label "Bandwith for accessing resources"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Specifies the bandwith allowed for accessing the resource. "@en .
 
 
-###  https://w3id.org/dataspace-policies/ns#bandwithUsage
+###  https://w3id.org/dataspaces-policies/bandwithUsage
 :bandwithUsage rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ,
                         <http://www.w3.org/ns/odrl/2/Action> ;
-               rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+               rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
                rdfs:label "Use bandwith"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "Use bandwith when accessing a resource. "@en ;
                <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
 
 
-###  https://w3id.org/dataspace-policies/ns#conformsTo
+###  https://w3id.org/dataspaces-policies/conformsTo
 :conformsTo rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/odrl/2/LeftOperand> ;
-            rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+            rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
             rdfs:label "Conforms to Schema"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "Defines the Schema that the Asset conforms to. Right operand value MUST be an dct:Standard. "@en .
 
 
-###  https://w3id.org/dataspace-policies/ns#membership
+###  https://w3id.org/dataspaces-policies/constraintLeftOperand
+:constraintLeftOperand rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/2004/02/skos/core#Collection> ;
+                       <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/absolutePosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/absoluteSize> ,
+                                                                    <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/count> ,
+                                                                    <http://www.w3.org/ns/odrl/2/dateTime> ,
+                                                                    <http://www.w3.org/ns/odrl/2/delayPeriod> ,
+                                                                    <http://www.w3.org/ns/odrl/2/deliveryChannel> ,
+                                                                    <http://www.w3.org/ns/odrl/2/elapsedTime> ,
+                                                                    <http://www.w3.org/ns/odrl/2/event> ,
+                                                                    <http://www.w3.org/ns/odrl/2/fileFormat> ,
+                                                                    <http://www.w3.org/ns/odrl/2/industry> ,
+                                                                    <http://www.w3.org/ns/odrl/2/language> ,
+                                                                    <http://www.w3.org/ns/odrl/2/media> ,
+                                                                    <http://www.w3.org/ns/odrl/2/meteredTime> ,
+                                                                    <http://www.w3.org/ns/odrl/2/payAmount> ,
+                                                                    <http://www.w3.org/ns/odrl/2/percentage> ,
+                                                                    <http://www.w3.org/ns/odrl/2/product> ,
+                                                                    <http://www.w3.org/ns/odrl/2/purpose> ,
+                                                                    <http://www.w3.org/ns/odrl/2/recipient> ,
+                                                                    <http://www.w3.org/ns/odrl/2/relativePosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/relativeSize> ,
+                                                                    <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> ,
+                                                                    <http://www.w3.org/ns/odrl/2/resolution> ,
+                                                                    <http://www.w3.org/ns/odrl/2/spatial> ,
+                                                                    <http://www.w3.org/ns/odrl/2/spatialCoordinates> ,
+                                                                    <http://www.w3.org/ns/odrl/2/systemDevice> ,
+                                                                    <http://www.w3.org/ns/odrl/2/timeInterval> ,
+                                                                    <http://www.w3.org/ns/odrl/2/unitOfCount> ,
+                                                                    <http://www.w3.org/ns/odrl/2/version> ,
+                                                                    <http://www.w3.org/ns/odrl/2/virtualLocation> ,
+                                                                    :bandwithUsage ,
+                                                                    :membership ,
+                                                                    :qualityControl ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Left Operands"@en ;
+                       <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+
+
+###  https://w3id.org/dataspaces-policies/constraintRightOp
+:constraintRightOp rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Collection> ;
+                   <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/policyUsage> ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Constraint Right Operands"@en ;
+                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+
+
+###  https://w3id.org/dataspaces-policies/membership
 :membership rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/odrl/2/LeftOperand> ;
-            rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+            rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
             rdfs:label "Proofs Membership"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "Defines the membership someone must have to acess a resource. "@en .
 
 
-###  https://w3id.org/dataspace-policies/ns#qualityControl
+###  https://w3id.org/dataspaces-policies/partyRoles
+:partyRoles rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Collection> ;
+            <http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/ns/odrl/2/attributedParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/compensatedParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/compensatingParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/consentedParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/consentingParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/informedParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/informingParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/trackedParty> ,
+                                                         <http://www.w3.org/ns/odrl/2/trackingParty> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Party Functions"@en ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Spaces Vocabulary Terms"@en .
+
+
+###  https://w3id.org/dataspaces-policies/qualityControl
 :qualityControl rdf:type owl:NamedIndividual ,
                          <http://www.w3.org/2004/02/skos/core#Concept> ,
                          <http://www.w3.org/ns/odrl/2/Action> ;
-                rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+                rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
                 rdfs:label "Perform quality control"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Perform quality control on the resource provided. "@en ;
                 <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
 
 
-###  https://w3id.org/dataspace-policies/ns#update
+###  https://w3id.org/dataspaces-policies/update
 :update rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/2004/02/skos/core#Concept> ,
                  <http://www.w3.org/ns/odrl/2/Action> ;
-        rdfs:isDefinedBy <https://w3id.org/dataspace-policies/ns#> ;
+        rdfs:isDefinedBy <https://w3id.org/dataspaces-policies/> ;
         rdfs:label "Update Data"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Update the resource provided. "@en ;
         <http://www.w3.org/ns/odrl/2/includedIn> <http://www.w3.org/ns/odrl/2/use> .
