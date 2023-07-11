@@ -1,20 +1,80 @@
-## Definition of used or common namespaces
-@base <http://www.w3.org/ns/odrl/2/> .
-@prefix : <http://www.w3.org/ns/odrl/2/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix profile: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix : <http://www.w3.org/ns/odrl/2/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix dataspaces: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
-@prefix ds: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> .
+@prefix dataspaces: <https://w3id.org/dataspace-policies/ns#> .
+
+odrl:core dct:title "The ODRL Core Profile Version 2.2" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dct:Standard ;
+	profile:hasResource _:r0, _:r1 .
+
+<https://w3id.org/dataspace-policies/ns#> 
+    dc:contributor "Andreas Krimbacher" ;
+	dc:creator "Sebastian Neumaier", "Tobias Dam" ;
+	dct:description "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces." ;
+	dct:issued "2023-07-16"^^xsd:date ;
+	dct:publisher "Sebastian Neumaier", "Tobias Dam" ;
+	dct:title "Data Spaces Profile Version 1" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:Profile ;
+	owl:versionInfo "1.0" ;
+	profile:hasResource dataspaces:ProfileSpec-html, dataspaces:ProfileVocabulary-ttl ;
+	profile:isProfileOf odrl:core .
+
+dataspaces:ProfileSpec-html dct:conformsTo <https://www.w3.org/TR/html/> ;
+	dct:format <https://www.iana.org/assignments/media-types/text/html> ;
+	dct:issued "2023-07-16"^^xsd:date ;
+	dct:title "Data Spaces Profile Version 1.0" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
+	owl:versionInfo "1.0" ;
+	profile:hasArtifact <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> ;
+	profile:hasRole role:specification .
+
+dataspaces:ProfileVocabulary-ttl dct:conformsTo <https://www.w3.org/TR/turtle/> ;
+	dct:format <https://www.iana.org/assignments/media-types/text/turtle> ;
+	dct:issued "2023-07-16"^^xsd:date ;
+	dct:publisher "Sebastian Neumaier", "Tobias Dam" ;
+	dct:title "Data Spaces Profile Version 1.0" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
+	owl:versionInfo "1.0" ;
+	profile:hasArtifact <https://github.com/fhstp/dataspaces-po
+    licies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
+	profile:hasRole role:vocabulary .
+
+_:r0 dct:conformsTo <https://www.w3.org/TR/html/> ;
+	dct:format <https://www.iana.org/assignments/media-types/text/html> ;
+	dct:issued "2018-02-15"^^xsd:date ;
+	dct:publisher "W3C" ;
+	dct:title "ODRL Information Model 2.2" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
+	profile:hasArtifact <https://www.w3.org/TR/odrl-model/> ;
+	profile:hasRole role:specification .
+
+_:r1 dct:conformsTo <https://www.w3.org/TR/turtle/> ;
+	dct:format <https://www.iana.org/assignments/media-types/text/turtle> ;
+	dct:issued "tbd"^^xsd:date ;
+	dct:publisher "W3C" ;
+	dct:title "ODRL Core Profile Version 2.2" ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
+	profile:hasArtifact <tbd> ;
+	profile:hasRole role:vocabulary .
+
+
+
+## Definition of used or common namespaces
+# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
+# @prefix ds: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> .
 
 ## Definition of the Profile as OWL Ontology
-ds:
+dataspaces:
     a owl:Ontology ;
     rdfs:label "Data Spaces Profile Version 1"@en ;
     owl:versionInfo "1.0" ;
