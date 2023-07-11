@@ -13,21 +13,21 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dataspaces: <https://w3id.org/dataspace-policies/ns#> .
 
-odrl:core dct:title "The ODRL Core Profile Version 2.2" ;
-	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dct:Standard ;
-	profile:hasResource _:r0, _:r1 .
 
-<https://w3id.org/dataspace-policies/ns#> 
-    dc:contributor "Andreas Krimbacher" ;
+## Definition of the Profile as OWL Ontology
+dataspaces: 
+	a owl:Ontology ;
 	dc:creator "Sebastian Neumaier", "Tobias Dam" ;
-	dct:description "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces." ;
+	dc:contributor "Andreas Krimbacher" ;
+	dct:description "The Data Spaces Profile. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en ;
 	dct:issued "2023-07-16"^^xsd:date ;
 	dct:publisher "Sebastian Neumaier", "Tobias Dam" ;
-	dct:title "Data Spaces Profile Version 1" ;
+	rdfs:label "Data Spaces Profile Version 1"@en ;
 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:Profile ;
 	owl:versionInfo "1.0" ;
 	profile:hasResource dataspaces:ProfileSpec-html, dataspaces:ProfileVocabulary-ttl ;
-	profile:isProfileOf odrl:core .
+	profile:isProfileOf odrl:core ;
+    	dct:license <http://creativecommons.org/licenses/by/4.0/> .
 
 dataspaces:ProfileSpec-html dct:conformsTo <https://www.w3.org/TR/html/> ;
 	dct:format <https://www.iana.org/assignments/media-types/text/html> ;
@@ -45,47 +45,11 @@ dataspaces:ProfileVocabulary-ttl dct:conformsTo <https://www.w3.org/TR/turtle/> 
 	dct:title "Data Spaces Profile Version 1.0" ;
 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
 	owl:versionInfo "1.0" ;
-	profile:hasArtifact <https://github.com/fhstp/dataspaces-po
-    licies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
+	profile:hasArtifact <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
 	profile:hasRole role:vocabulary .
 
-_:r0 dct:conformsTo <https://www.w3.org/TR/html/> ;
-	dct:format <https://www.iana.org/assignments/media-types/text/html> ;
-	dct:issued "2018-02-15"^^xsd:date ;
-	dct:publisher "W3C" ;
-	dct:title "ODRL Information Model 2.2" ;
-	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
-	profile:hasArtifact <https://www.w3.org/TR/odrl-model/> ;
-	profile:hasRole role:specification .
-
-_:r1 dct:conformsTo <https://www.w3.org/TR/turtle/> ;
-	dct:format <https://www.iana.org/assignments/media-types/text/turtle> ;
-	dct:issued "tbd"^^xsd:date ;
-	dct:publisher "W3C" ;
-	dct:title "ODRL Core Profile Version 2.2" ;
-	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
-	profile:hasArtifact <tbd> ;
-	profile:hasRole role:vocabulary .
-
-
-
-## Definition of used or common namespaces
-# https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
-# @prefix ds: <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl> .
-
-## Definition of the Profile as OWL Ontology
-dataspaces:
-    a owl:Ontology ;
-    rdfs:label "Data Spaces Profile Version 1"@en ;
-    owl:versionInfo "1.0" ;
-    dct:creator "Sebastian Neumaier", "Tobias Dam" ;
-    dct:contributor "Andreas Krimbacher" ;
-    dct:description "The Data Spaces vocabulary. Primarily used to demonstrate the creation and applicability of policy patterns in data spaces."@en ;
-    rdfs:comment "This is the RDF ontology for Data Spaces Profile 1"@en ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> .
 
 ## Concept(s) specified by this Profile. 
-
 dataspaces:conformsTo
     a :LeftOperand, owl:NamedIndividual ;
     rdfs:isDefinedBy dataspaces: ;
@@ -126,7 +90,7 @@ dataspaces:update
     skos:definition "Update the resource provided. "@en .
 
 ## SKOS Collection of all concepts defined by this Profile
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl>
+dataspaces:
     a skos:Collection ;
     skos:prefLabel "Data Spaces Profile Vocabulary"@en ;
     skos:scopeNote "All terms of the Data Spaces Vocabulary"@en ;
@@ -222,14 +186,13 @@ dataspaces:update
 
 
 ## SKOS Collection of all Action concepts defined by this Profile
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#actions>
+dataspaces:actions
     a skos:Collection ;
     skos:prefLabel "Actions for Rules"@en ;
     skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
     skos:member dataspaces:bandwithUsage;
     skos:member dataspaces:qualityControl;
     skos:member dataspaces:update;
-
     skos:member :acceptTracking ;
     skos:member :aggregate ;
     skos:member :annotate ;
@@ -269,7 +232,7 @@ dataspaces:update
     skos:member :watermark .
 
 ## SKOS Collection of all Left Operand concepts defined by this Profile
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintLeftOperand>
+dataspaces:constraintLeftOperand
     a skos:Collection ;
     skos:prefLabel "Constraint Left Operands"@en ;
     skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
@@ -310,13 +273,13 @@ dataspaces:update
     skos:member :version ;
     skos:member :virtualLocation .
 
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#constraintRightOp>
+dataspaces:constraintRightOp
     a skos:Collection ;
     skos:prefLabel "Constraint Right Operands"@en ;
     skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
     skos:member :policyUsage .
 
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#partyRoles>
+dataspaces:partyRoles
     a skos:Collection ;
     skos:prefLabel "Party Functions"@en ;
     skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
@@ -330,26 +293,26 @@ dataspaces:update
     skos:member :trackingParty ;
     skos:member :trackedParty .
 
-<https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-w3c-profile-vocabulary.ttl#assetRelations>
+dataspaces:assetRelations
     a skos:Collection ;
     skos:prefLabel "Asset Relations"@en ;
     skos:scopeNote "Data Spaces Vocabulary Terms"@en ;
     skos:member :output .
 
 ## Declaration of annotation properties to keep this ontology within OWL DL
-	skos:member rdf:type owl:AnnotationProperty .
-	skos:note rdf:type owl:AnnotationProperty .
-	skos:scopeNote rdf:type owl:AnnotationProperty .
-	skos:prefLabel rdf:type owl:AnnotationProperty .
-	skos:definition rdf:type owl:AnnotationProperty .
-	dct:contributor rdf:type owl:AnnotationProperty .
-	dct:license rdf:type owl:AnnotationProperty .
-	dct:issued rdf:type owl:AnnotationProperty .
-	dct:subject rdf:type owl:AnnotationProperty .
-	dct:creator rdf:type owl:AnnotationProperty .
-	dct:description rdf:type owl:AnnotationProperty .
-	dct:isVersionOf rdf:type owl:AnnotationProperty .
-	dct:format rdf:type owl:AnnotationProperty .
-	skos:Collection a owl:Class .
-	skos:Concept a owl:Class .
-	skos:ConceptScheme a owl:Class .
+skos:member rdf:type owl:AnnotationProperty .
+skos:note rdf:type owl:AnnotationProperty .
+skos:scopeNote rdf:type owl:AnnotationProperty .
+skos:prefLabel rdf:type owl:AnnotationProperty .
+skos:definition rdf:type owl:AnnotationProperty .
+dct:contributor rdf:type owl:AnnotationProperty .
+dct:license rdf:type owl:AnnotationProperty .
+dct:issued rdf:type owl:AnnotationProperty .
+dct:subject rdf:type owl:AnnotationProperty .
+dct:creator rdf:type owl:AnnotationProperty .
+dct:description rdf:type owl:AnnotationProperty .
+dct:isVersionOf rdf:type owl:AnnotationProperty .
+dct:format rdf:type owl:AnnotationProperty .
+skos:Collection a owl:Class .
+skos:Concept a owl:Class .
+skos:ConceptScheme a owl:Class .
