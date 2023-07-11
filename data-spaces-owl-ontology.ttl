@@ -11,7 +11,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix dataspaces: <https://w3id.org/dataspaces-policies/ns#> .
+@prefix dataspaces: <https://w3id.org/dataspaces-policies/> .
 
 
 ## Definition of the Profile as OWL Ontology
