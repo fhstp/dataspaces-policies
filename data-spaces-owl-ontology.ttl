@@ -35,7 +35,7 @@ dataspaces:ProfileSpec-html dct:conformsTo <https://www.w3.org/TR/html/> ;
 	dct:title "Data Spaces Profile Version 1.0" ;
 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
 	owl:versionInfo "1.0" ;
-	profile:hasArtifact <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> ;
+	profile:hasArtifact <https://fhstp.github.io/dataspaces-policies> ;
 	profile:hasRole role:specification .
 
 dataspaces:ProfileVocabulary-ttl dct:conformsTo <https://www.w3.org/TR/turtle/> ;
@@ -45,7 +45,7 @@ dataspaces:ProfileVocabulary-ttl dct:conformsTo <https://www.w3.org/TR/turtle/> 
 	dct:title "Data Spaces Profile Version 1.0" ;
 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> profile:ResourceDescriptor ;
 	owl:versionInfo "1.0" ;
-	profile:hasArtifact <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
+	profile:hasArtifact <https://fhstp.github.io/dataspaces-policies/ontology.ttl> ;
 	profile:hasRole role:vocabulary .
 
 
