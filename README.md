@@ -15,7 +15,7 @@ We have collected a set of policy patterns for usage control that are particular
 
 | Policy Pattern               | Description / Example                                             | PIP                   | PAP/PDP  | Enforcement | ODRL File                                           |
 |---------------------------|-------------------------------------------------------|-----------------|-------------|--------------|------------------------------------------------------|
-| Allow access              | Provider allows access to the data for a specific consumer. | Provider        | Provider    | Preventive   | [access-specific-consumer1.ttl](example-policies/access-specific-consumer1.ttl)  [access-specific-consumer2.ttl](example-policies/access-specific-consumer2.ttl)                |
+| Allow access              | Provider allows access to the data for a specific consumer. | Provider        | Provider    | Preventive   | [access-specific-consumer.ttl](example-policies/access-specific-consumer.ttl)                |
 | Location / Regional access restriction | Consumer can access data only if located in allowed region. | Provider        | Provider    | Detective    | [regional-access-restriction.ttl](example-policies/regional-access-restriction.ttl) |
 | Location / Regional storage restriction | Consumer can store data only if the storage is located in allowed region. | Consumer, Third Party | Provider    | Detective    | [regional-storage-restriction.ttl](example-policies/regional-storage-restriction.ttl) |
 | Time restriction          | Consumer can access data only in pre-defined time period. | Provider        | Provider    | Preventive   | [time-restriction.ttl](example-policies/time-restriction.ttl)                                        |
