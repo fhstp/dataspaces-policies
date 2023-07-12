@@ -1,17 +1,17 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/policy:time_restriction>
+<http://example.com/policies#policy>
   a odrl:Policy ;
   odrl:permission [
     odrl:action odrl:read ;
-    odrl:assignee <http://example.com/people/bob> ;
-    odrl:assigner <http://example.com/people/alice> ;
+    odrl:assigner  <https://www.example.com/provider> ;
+    odrl:assignee  <https://www.example.com/consumer> ;
     odrl:constraint [
       odrl:leftOperand odrl:dateTime ;
       odrl:operator odrl:lt ;
       odrl:rightOperand "2024-01-01"^^xsd:date
     ] ;
-    odrl:target <http://example.com/asset:1234>
+    odrl:target <http://example.com/files/file1>
   ] ;
-  odrl:profile <http://example.com/odrl:profile:10> .
+  odrl:profile odrl:core .

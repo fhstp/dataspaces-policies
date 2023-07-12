@@ -1,6 +1,6 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
-@prefix ds: <http://www.w3id.org/ns/dataspace-policies/> .
+@prefix ds: <http://www.w3id.org/dataspaces-policies/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://example.com/policies#policy>

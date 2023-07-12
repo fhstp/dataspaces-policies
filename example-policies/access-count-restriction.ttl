@@ -3,7 +3,7 @@
 
 <http://example.com/policies#policy>
   a odrl:Policy ;
-  odrl:profile <http://www.w3.org/ns/odrl/2/core> ;
+  odrl:profile odrl:core ;
   odrl:permission <http://example.com/policies#permission1> .
 
 <http://example.com/policies#permission1>

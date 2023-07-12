@@ -1,9 +1,9 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/policy001>
+<http://example.com/policies#policy>
   a odrl:Policy ;
-  odrl:profile <http://www.w3.org/ns/odrl.jsonld> ;
+  odrl:profile odrl:core ;
   odrl:assigner <https://www.example.com/provider> ;
   odrl:assignee <https://www.example.com/consumer> ;
   odrl:obligation [
