@@ -10,15 +10,15 @@
   a odrl:Permission ;
   odrl:target <http://example.com/files/file1> ;
   odrl:assigner <https://www.example.com/provider> ;
-  odrl:assignee <https://www.example.com/provider> ;
-  odrl:action odrl:distribute ;
+  odrl:assignee <https://www.example.com/consumer-A> ;
+  odrl:action odrl:read ;
   odrl:constraint <http://example.com/policies#constraint1> .
 
 <http://example.com/policies#constraint1>
   a odrl:Constraint ;
   odrl:leftOperand odrl:recipient ;
   odrl:operator odrl:eq ;
-  odrl:rightOperand <https://www.example.com/consumer> .
+  odrl:rightOperand <https://www.example.com/consumer-B> .
 
 <http://example.com/files/file1>
   a odrl:Asset ;
