@@ -263,7 +263,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://purl.org/dc/terms/issued> "2023-07-16"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" ;
                   owl:versionInfo "1.0" ;
-                  <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> ;
+                  <http://www.w3.org/ns/dx/prof/hasArtifact> <https://fhstp.github.io/dataspaces-policies> ;
                   <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/specification> .
 
 
@@ -277,7 +277,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                             "Tobias Dam" ;
                        <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" ;
                        owl:versionInfo "1.0" ;
-                       <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> ;
+                       <http://www.w3.org/ns/dx/prof/hasArtifact> <https://fhstp.github.io/dataspaces-policies/ontology.ttl> ;
                        <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/vocabulary> .
 
 

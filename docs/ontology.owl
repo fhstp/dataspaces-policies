@@ -402,7 +402,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-16</terms:issued>
         <terms:title>Data Spaces Profile Version 1.0</terms:title>
         <owl:versionInfo>1.0</owl:versionInfo>
-        <prof:hasArtifact rdf:resource="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html"/>
+        <prof:hasArtifact rdf:resource="https://fhstp.github.io/dataspaces-policies"/>
         <prof:hasRole rdf:resource="http://www.w3.org/ns/dx/prof/role/specification"/>
     </owl:NamedIndividual>
     
@@ -420,7 +420,7 @@
         <terms:publisher>Tobias Dam</terms:publisher>
         <terms:title>Data Spaces Profile Version 1.0</terms:title>
         <owl:versionInfo>1.0</owl:versionInfo>
-        <prof:hasArtifact rdf:resource="https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl"/>
+        <prof:hasArtifact rdf:resource="https://fhstp.github.io/dataspaces-policies/ontology.ttl"/>
         <prof:hasRole rdf:resource="http://www.w3.org/ns/dx/prof/role/vocabulary"/>
     </owl:NamedIndividual>
     

@@ -242,7 +242,7 @@
 <https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/issued> "2023-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" .
 <https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html> .
+<https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://fhstp.github.io/dataspaces-policies> .
 <https://w3id.org/dataspaces-policies/ProfileSpec-html> <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/specification> .
 # 
 # https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl
@@ -255,7 +255,7 @@
 <https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/publisher> "Tobias Dam" .
 <https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://purl.org/dc/terms/title> "Data Spaces Profile Version 1.0" .
 <https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl> .
+<https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/ns/dx/prof/hasArtifact> <https://fhstp.github.io/dataspaces-policies/ontology.ttl> .
 <https://w3id.org/dataspaces-policies/ProfileVocabulary-ttl> <http://www.w3.org/ns/dx/prof/hasRole> <http://www.w3.org/ns/dx/prof/role/vocabulary> .
 # 
 # https://w3id.org/dataspaces-policies/actions

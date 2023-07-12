@@ -342,7 +342,7 @@
     "@value" : "1.0"
   } ],
   "http://www.w3.org/ns/dx/prof/hasArtifact" : [ {
-    "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.html"
+    "@id" : "https://fhstp.github.io/dataspaces-policies"
   } ],
   "http://www.w3.org/ns/dx/prof/hasRole" : [ {
     "@id" : "http://www.w3.org/ns/dx/prof/role/specification"
@@ -375,7 +375,7 @@
     "@value" : "1.0"
   } ],
   "http://www.w3.org/ns/dx/prof/hasArtifact" : [ {
-    "@id" : "https://github.com/fhstp/dataspaces-policies/blob/262633b7024c4f849cbe2a78bfbef036bb3da873/data-spaces-owl-ontology.ttl"
+    "@id" : "https://fhstp.github.io/dataspaces-policies/ontology.ttl"
   } ],
   "http://www.w3.org/ns/dx/prof/hasRole" : [ {
     "@id" : "http://www.w3.org/ns/dx/prof/role/vocabulary"
