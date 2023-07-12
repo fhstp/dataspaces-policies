@@ -1,51 +1,36 @@
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dsp: <http://www.w3id.org/dataspaces-policies/> .
 
-<http://example.com/policies#policy>
+<http://example.com/policies#consumer-administered>
   a odrl:Policy ;
-  odrl:profile odrl:core ;
-  odrl:permission <http://example.com/policies#permission1> .
-
-<http://example.com/policies#permission1>
-  a odrl:Permission ;
-  odrl:target <http://example.com/files/file1> ;
-  odrl:assigner <https://www.example.com/provider> ;
-  odrl:assignee <https://www.example.com/consumer> ;
-  odrl:action <http://example.com/policies#action1> ;
-  odrl:constraint <http://example.com/policies#constraint1> ;
+  odrl:profile <http://www.w3id.org/dataspaces-policies/> ;
   odrl:obligation [
     a odrl:Obligation ;
     odrl:target <http://example.com/files/file1> ;
-    odrl:action odrl:delete ;
+    odrl:assigner <https://www.example.com/consumer> ;
+    odrl:assignee <https://www.example.com/provider> ;
+    odrl:action dsp:update ;
     odrl:constraint [
       a odrl:Constraint ;
-      odrl:leftOperand odrl:dateTime ;
-      odrl:operator odrl:lt ;
-      odrl:rightOperand "2023-07-10T00:00:00Z"^^xsd:dateTime
+      odrl:leftOperand odrl:timeInterval ;
+      odrl:operator odrl:eq ;
+      odrl:rightOperand "P30S"^^xsd:duration
     ]
   ], [
-    a odrl:Obligation ;
-    odrl:target <http://example.com/files/file1> ;
-    odrl:action odrl:anonymize
+    odrl:action [
+      a odrl:Action ;
+      rdf:value dsp:qualityControl ;
+      odrl:refinement [
+        odrl:leftOperand dsp:conformsTo ;
+        odrl:operator odrl:eq ;
+        odrl:rightOperand <http://example.com/shacl-shape>
+      ]
+    ] ;
+    odrl:constraint [
+      odrl:leftOperand odrl:event ;
+      odrl:operator odrl:lt ;
+      odrl:rightOperand odrl:policyUsage
+    ]
   ] .
-
-<http://example.com/policies#action1>
-  a odrl:Action ;
-  rdf:value odrl:read ;
-  odrl:refinement [
-    odrl:leftOperand odrl:unitOfCount ;
-    odrl:operator odrl:eq ;
-    odrl:rightOperand "MiB"
-  ] .
-
-<http://example.com/policies#constraint1>
-  a odrl:Constraint ;
-  odrl:leftOperand odrl:count ;
-  odrl:operator odrl:lteq ;
-  odrl:rightOperand "1024" .
-
-<http://example.com/files/file1>
-  a odrl:Asset ;
-  dc11:title "File 1" .
