@@ -1,6 +1,21 @@
 # Policy Patterns for Usage Control in Data Spaces
 
-This repository complements the paper titled "Policy Patterns for Usage Control in Data Spaces". The work aims to contribute to the further development of automated contract negotiation and data usage policies in data spaces. 
+This repository complements the paper ["Policy Patterns for Usage Control in Data Spaces"](Policy_Patterns_for_Usage_Control_in_Data_Spaces.pdf). The work aims to contribute to the further development of automated contract negotiation and data usage policies in data spaces.
+
+Cite As:
+```
+Tobias Dam, Andreas Krimbacher, and Sebastian Neumaier. Policy Patterns for Usage Control in Data Spaces. In Fifth International Workshop On A Semantic Data Space For Transport @ SEMANTiCS 2023, Leipzig, Germany, September 2023.
+```
+```
+@inproceedings{dam2023policy,
+	title        = {Policy Patterns for Usage Control in Data Spaces},
+	author       = {Tobias Dam and Andreas Krimbacher and Sebastian Neumaier},
+	year         = 2023,
+	month        = {September},
+	booktitle    = {Fifth International Workshop On A Semantic Data Space For Transport @ SEMANTiCS 2023},
+	address      = {Leipzig, Germany}
+}
+```
 
 ## Repository Contents
 ### *Collection of Policy Patterns in ODRL*
